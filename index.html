@@ -1,0 +1,202 @@
+<html>
+    <head>
+        <!-- ازاي تحول السطر لكومنت
+        بتقف عليه وتدوس كنترول ظ -->
+        <meta charset="UTF-8" />
+        <title>Book store</title>
+        <meta name="description" content="This is our book store" />
+        <style>
+            .all{
+                text-align: center;
+            }
+            .his_books {
+                background-color: aqua;
+            }
+            .dev_books{
+                background-color: burlywood;
+            }
+            .fis_books{
+                background-color: darkolivegreen;
+            }
+        </style>
+        <script></script>
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!-- عشان تنزل سطر لتحت بتدوس الت شفت والسهم تحت -->
+        <!-- b => bold => only bold
+        strng => bold => important text
+        i => Italic
+        em => Emphasized
+        mark => Marked Text Or Highlighted Text
+        u => Underline
+        small => Smaller text
+        del => Deleted Text
+        ins => Inserted Text
+        sub => Subscript  للمعادلات الكيميائية
+        sup => Superscript للأسس الرياضية
+        -->
+        <h1>Book store</h1>
+        <p>this is <span>my</span> <b>book store</b><br>, wlcome</p>
+        <!-- lists
+        ul => unorder list
+        ol => order list 
+        dl > dt > dd-->
+        <ul>
+            <li>كتب علمية</li>
+            <li>كتب تاريخية</li>
+            <li>كتب الرعب
+                <ul>
+                    <li>خيالية</li>
+                    <li>واقعية</li>
+                </ul>
+            </li>
+        </ul>
+        <!-- attrbiots
+        start => start from
+        type => type of order
+        reversed -->
+        <ol type="i"> أنواع الكتب المفضلة
+            <li>الكتب العلمية</li>
+            <li>الكتب التاريخية</li>
+            <li>الروايات</li>
+        </ol>
+        
+
+        <p hidden >this is my <strong>book store</strong>, not wlcome</p>
+        <a href="https://google.com" target="_blank" title="Google">google</a>
+        <!-- the title at link watch will you stand on it -->
+        <!-- You can go to a pragraph on your page -->
+        <a href="#pra">go to inside ragraph</a>
+        <a href="mailto:hamal610625@gmail.com">mail me</a>
+        <p id="pra">this is my <b>book store</b>, wlcome</p>
+        <img src="images/books.jpg" alt="logo">
+        <hr>
+
+        <div class="all">
+            <div class="his_books">
+                <div class="tatar">
+                    <h3>قصة التتار من البداية لعين جالوت</h3>
+                    <p>الكاتب: راغب السرجاني</p>
+                </div>
+                <div class="albedayah">
+                    <h3>البداية والنهاية</h3>
+                    <p>الكاتب: مصطفي محمود</p>
+                </div>
+                <div class="alandalos">
+                    <h3>الأندلس من الفتح إلى السقوط</h3>
+                    <p>الكاتب: راغب السرجاني</p>
+                </div>
+            </div>
+            
+            <div class="dev_books">
+                <div class="tenKeys">
+                    <h3>المفاتيح العشرة للنجاح</h3>
+                    <p>الكاتب: إبراهيم الفقي</p>
+                </div>
+                <div class="3adat">
+                    <h3>العادات الذرية</h3>
+                </div>
+            </div>
+            <div class="fis_books">
+                <div class="nesbiah">
+                    <h3>أينشتاين والنسبية</h3>
+                    <p>الكاتب: مصطفي محمود</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Entities</h2>
+        <a href="https://www.w3schools.com/html/html_entities.asp" target="_blank">go to it</a>
+        <br>
+        <audio src="media/001.mp3" controls loop autoplay></audio> <br>
+        <video src="F:\[EgyBest].Jumanji.Welcome.To.The.Jungle.2017.BluRay.1080p.x264.mp4" controls width="400" height="200" poster="images/books.jpg"></video>
+    <br>
+    <br>
+    <br>
+        <form action="" method="POST" target="_blank">
+            <div>
+                <label>Username</label>
+                <input type="text" required placeholder="اسم المستخدم" name="user">
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" required placeholder="كلمة المرور" name="pass" minlength="8">
+            </div>
+            <input type="email" required placeholder="add a new email" value="m07ammed7egazy@gmail.com" name="mail">
+            <input type="number" name="num" min="16" max="60">
+            <br>
+            <input id="win" type="radio" name="radio" value="his">
+            <label for="win">تاريخ</label>
+            <br>
+            <input id="dev" type="radio" name="radio" value="dev">
+            <label for="dev">تنمية بشرية</label>
+            <br>
+            <input id="fis" type="radio" name="radio" value="fis">
+            <label for="fis">فيزياء</label>
+            <br>
+            <input id="his1" type="checkbox" name="radio" value="his">
+            <label for="his1">تاريخ</label>
+            <br>
+            <input id="dev1" type="checkbox" name="radio" value="dev">
+            <label for="dev1">تنمية بشرية</label>
+            <br>
+            <input id="fis1" type="checkbox" name="radio" value="fis">
+            <label for="fis1">فيزياء</label>
+            <br>
+            <label for="book">Choose Book:</label>
+            <select name="book" id="book">
+                <optgroup label="Romantic Books">
+                    <option value="1">Book 1</option>
+                    <option value="2">Book 2</option>
+                    <option value="3">Book 3</option>
+                </optgroup>
+                <optgroup label="Police Books">
+                    <option value="4" selected>Book 4</option>
+                    <option value="5">Book 5</option>
+                    <option value="6">Book 6</option>
+                </optgroup>
+            </select>
+            <br>
+            <textarea name="area" cols="30" rows="10" placeholder="bla bla bla"></textarea>
+            <br>
+            <div>
+                <label for="file">Uplod</label>
+                <input id="file" type="file">
+            </div>
+            <div>
+                <label for="date">date</label>
+                <input id="date" type="date">
+            </div>
+            <div>
+                <label for="mon">month</label>
+                <input id="mon" type="month">
+            </div>
+            <div>
+                <label for="time">time</label>
+                <input id="time" type="time">
+            </div>
+            <input list="programming" name="prog">
+
+            <datalist id="programming">
+                <option value="Python">
+                <option value="PHP">
+                <option value="C#">
+                <option value="C">
+                <option value="C++">
+                <option value="Scala">
+            </datalist>
+            <br>
+            <input type="submit">
+
+        </form>
+        <pre>
+            <code>
+                var x = 10;
+                var y = 20;
+                console.log(x + y);
+            </code>
+        </pre>
+        <iframe src="https://m07ammed7egazy.github.io/new/" width="800" height="400"></iframe>
+    </body>
+</html>
